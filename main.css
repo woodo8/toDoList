@@ -1,0 +1,83 @@
+body{
+	background-color: lavender;
+}
+h1{
+	font-weight: 900;
+	margin: 100px auto;
+	text-align: center;
+}
+#navbar button{
+	width: 25%;
+	color: white;
+}
+#navbar #add{
+	background-color: rgba(65, 215, 2, 0.6);
+}
+#navbar #clear{
+	background-color: rgba(211, 5, 53, 0.7);
+}
+#navbar input{
+	width: 45%;
+}
+#bodyOf{
+	background-color: rgba(65, 215, 2, 0.6);
+	border-radius: 5px;	box-shadow: 10px 10px 15px rgba(65, 215, 2, 0.4);
+	height: 450px;
+	overflow-y: auto;
+}
+#bodyOf h4{
+	font-weight: 800;
+	letter-spacing: 3px;
+	color: white;
+}
+li{
+	width: 90%;
+	margin: 10px auto;
+	border: none;
+	border-radius: 4px;
+	background-color: rgba(211, 5, 53, 0.7);
+	padding: 10px 15px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 900;
+	letter-spacing: 2.5px;
+	list-style: none;
+	transition: all 0.4s linear;
+	overflow-x: hidden;
+}
+li:hover{
+	background-color: rgba(0, 5, 53, 0.4);
+}
+li img{
+	width: 16px;
+	height: 16px;
+	margin: 5px 40px;
+	transition: all 0.2s linear;
+}
+li img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+@media only screen and (max-width: 400px) {
+	body{
+		margin: 5px 20px;
+	}
+	li{
+		font-size: 14px;
+	}
+	li img{
+		margin: 5px 20px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.btn, input{
+		font-size: 12px;
+	}
+	li{
+		font-size: 13px;
+	}
+	li img{
+		margin: 5px 10px;
+	}
+}
